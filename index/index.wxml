@@ -1,0 +1,24 @@
+<view class="main">
+  <view class="devices_summary">已发现 {{devices.length}} 个可连接设备：</view>
+  <scroll-view class="device_list" scroll-y scroll-with-animation>
+    <view wx:for="{{devices}}" wx:key="index" class="device_item">
+      <view class="flex-left">
+        <view style="color: rgb(115, 115, 228);" class="f12">{{item.name}}</view>
+        <view class="f10">信号强度: {{item.RSSI}}dBms</view>
+        <!-- <view class="f10">UUID: {{item.deviceId}}</view> -->
+      </view>
+      <view class="flex-right">
+        <button size="mini" bindtap="closeBLEConnection" class="size red" wx:if="{{connected && deviceId == item.deviceId}}">断开连接</button>
+        <button size="mini" bindtap="createBLEConnection" class="size green" wx:else data-device-id="{{item.deviceId}}" data-name="{{item.name || item.localName}}">连接设备</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="connected_info">
+  <view class="buttons">
+    <button bindtap="openBluetoothAdapter" class="button" wx:if="{{!search}}" type="primary">开始寻找设备</button>
+    <button bindtap="stopBluetoothDevicesDiscovery" class="button" wx:else type="warn">停止寻找设备</button>
+    <button bindtap="closeBluetoothAdapter" class="button" type="warn">结束脉诊</button>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle":"white",
+    "navigationBarBackgroundColor": "#7dd5a9",
+    "navigationBarTitleText": "脉诊仪器"
+  },
+  "sitemapLocation": "sitemap.json"
+}

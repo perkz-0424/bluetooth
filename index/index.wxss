@@ -1,0 +1,133 @@
+page {
+  color: #333;
+}
+
+.main {
+  height: 100vh;
+  background-color: rgba(186, 186, 199, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  padding: 40rpx 0;
+  display: flex;
+}
+
+.button {
+  flex: 1;
+  margin: 0 20rpx;
+  border-radius: 30rpx;
+  height: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  font-size: 30rpx;
+}
+
+button {
+  color: #333;
+}
+
+.button::after {
+  border: none;
+}
+
+.devices_summary {
+  padding: 20rpx;
+  font-size: 30rpx;
+  flex-direction: 5%;
+  font-weight: bold;
+}
+
+.flex-left {
+  flex-basis: 70%;
+}
+
+.flex-left {
+  flex-basis: 70%;
+}
+
+.flex-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.flex-right .size {
+  color: #3c3c3c;
+  font-weight: 500;
+  height: 50rpx;
+  width: 100%;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  background-color: transparent;
+}
+
+.size:active {
+  color: #EEE;
+}
+
+.flex-right .size::after {
+  border: none;
+}
+
+.device_list {
+  margin: 100rpx 10rpx;
+  margin-top: 0;
+  border: 1rpx solid #EEE;
+  border-radius: 10 rpx;
+  width: auto;
+  flex: 1;
+  box-sizing: border-box;
+  padding-bottom: 200rpx;
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+.device_item {
+  border-bottom: 1rpx solid #EEE;
+  padding: 20rpx;
+  color: #666;
+  display: flex;
+}
+
+.device_item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.connected_info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: env(safe-area-inset-bottom);
+  font-size: 30rpx;
+  /* box-shadow: 0 -6rpx 6rpx 0 #c4cdd3; */
+  box-sizing: border-box;
+  height: 200rpx;
+  /* background-color: rgba(186, 186, 199, 0.1); */
+}
+
+.connected_info .operation {
+  position: absolute;
+  display: inline-block;
+  right: 60rpx;
+}
+
+.f12 {
+  margin: 8rpx 0;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.f10 {
+  margin: 8rpx 0;
+  font-size: 20rpx;
+}
+
+.red {
+  color: rgb(78, 41, 41) !important;
+}
+
+.green {
+  color: #33423b !important;
+}
